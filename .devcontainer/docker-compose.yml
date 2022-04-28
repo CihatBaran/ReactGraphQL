@@ -1,0 +1,27 @@
+version: '3'
+
+services:
+  postgres:
+    image: postgres:12.6
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+      - POSTGRES_DB=pgpsq
+    ports:
+      - 5555:5432
+
+  backend:
+    build: ../
+    environment:
+      - DB_HOST=postgres
+      - DB_PORT=5432
+      - DB_USER=postgres
+      - DB_PASSWORD=postgres
+      - DATABASE_URL=pgpsq
+    command: sleep infinity
+    volumes:
+      - ../:/workspace:delegated
+    depends_on:
+      - postgres
+volumes:
+  ..:

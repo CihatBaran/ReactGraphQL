@@ -1,0 +1,14 @@
+{
+    "name": "react",
+    "dockerComposeFile": "./docker-compose.yml",
+    "service": "backend",
+    "workspaceFolder": "/workspace",
+    "extensions": [
+        "donjayamanne.githistory",
+        "eamodio.gitlens",
+        "jeremyrajan.react-component",
+        "Gruntfuggly.todo-tree",
+        "wayou.vscode-todo-highlight",
+        "dbaeumer.vscode-eslint"
+    ]
+}
