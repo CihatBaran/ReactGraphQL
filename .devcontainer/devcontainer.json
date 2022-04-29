@@ -1,6 +1,9 @@
 {
     "name": "react",
     "dockerComposeFile": "./docker-compose.yml",
+    "otherPortsAttributes": {
+        "onAutoForward": "notify"
+    },
     "service": "backend",
     "workspaceFolder": "/workspace",
     "extensions": [

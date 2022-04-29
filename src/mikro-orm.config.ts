@@ -11,8 +11,8 @@ export default {
     dbName: 'pgpsq',
     user: "postgres",
     password: "postgres",
+    host: 'postgres',
     type: "postgresql",
-    debug: !__prod__,
-    host: 'postgres'
+    debug: !__prod__
 
 } as Options;
