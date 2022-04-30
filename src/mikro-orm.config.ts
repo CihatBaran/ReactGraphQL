@@ -8,11 +8,12 @@ export default {
         path: path.join(__dirname, "./migrations")
     },
     entities: [Post],
-    dbName: 'pgpsq',
+    dbName: 'react',
     user: "postgres",
-    password: "postgres",
-    host: 'postgres',
+    password: "Cbaran2011",
+    host: 'localhost',
     type: "postgresql",
+    port: 5432,
     debug: !__prod__
 
 } as Options;
